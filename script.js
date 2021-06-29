@@ -5,7 +5,10 @@ let pointsForComp=0;
             return array[Math.floor(Math.random() * array.length)].toLowerCase();
         }
 
-        function playRound(playerSelection, computerSelection) {
+        function playRound(playerSelection) {
+
+            const computerSelection = computerPlay();
+            console.log("Computer picked "+ computerSelection);
             if(computerSelection===playerSelection.toLowerCase())
             {
                 return ("Draw! Play again \nPoints for computer: "+ pointsForComp + "\nPoints for You: "+ pointsForUser);
@@ -57,12 +60,11 @@ let pointsForComp=0;
 
         function game(){
             
-                const playerSelection = prompt ("Choose your weapon!");
+                
                 for(let i=0;i<=4;i++)
                 {
-                    const computerSelection = computerPlay();
-                    console.log("Computer picked "+ computerSelection);
-                    console.log(playRound(playerSelection, computerSelection));
+                    const playerSelection = prompt ("Choose your weapon!");
+                    console.log(playRound(playerSelection));
                     
                 }
                 console.log(results());
