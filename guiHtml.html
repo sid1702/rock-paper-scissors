@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="guiStyle.css" rel="stylesheet">
+    <title>Rock-Paper-Scissors Game</title>
+</head>
+<body>
+    <div id="reloadDiv"></div>
+    <div class="mainDiv">
+        <div class="firstDiv">
+            <h1>What will it be? Rock, Paper or Scissors?</h1>
+        </div>
+        
+        <div class="secondDiv">
+            <div class="secondDivChild1">
+                <h2>You Chose:</h2>
+                <p id="yourChoice"></p>
+            </div>
+
+            <div class="secondDivChild2">
+                <h2>Machine Chose:</h2>
+                <p id="machineChoice"></p>
+            </div>
+        </div>
+
+        <div class="thirdDiv">
+            <button class="rock" onclick="playRound('Rock')">Rock</button>
+            <button class="paper" onclick="playRound('Paper')">Paper</button>
+            <button class="scissors" onclick="playRound('Scissors')">Scissors</button>
+        </div>
+
+        <div class="fourthDiv">
+            <div>
+                <h2>Your Score:</h2>
+                <p id="yourScore"></p>
+            </div>
+            
+            <div>
+                <h2>Machines Score:</h2>
+                <p id="machineScore"></p>
+            </div>
+            
+        </div>
+        
+        <div id="resultDiv"></div>
+        
+    </div>
+    
+</body>
+<script src="guiScript.js"></script>
+</html>
