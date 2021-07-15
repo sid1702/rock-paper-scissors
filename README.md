@@ -1,3 +1,7 @@
+---
+permalink: /guiHtml.html
+---
+
 Lessons learned...
 
 1)How to properly write functions.
