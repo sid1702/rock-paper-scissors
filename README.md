@@ -1,4 +1,5 @@
 # rock-paper-scissors
+Live demo: https://sid1702.github.io/rock-paper-scissors/
 Things learned...
 
 1)How to properly write functions.
